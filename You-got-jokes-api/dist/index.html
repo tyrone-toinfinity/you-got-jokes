@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="Author" content=" Bobby Woody " />
+    <meta name="description" content="You Got Jokes" />
+    <meta
+      name="keywords"
+      content="Web Developer, Software Developer, Bobby Woody, Front-End Web Developer, Salt Lake City Web Developer,"
+    />
+    <title>You got Jokes</title>
+
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAANlBMVEX////w8PHh4uOfoaRiY2WTlZhUVVfHyMoAAAAhISJ8fX9FRUe5u72srrFvcHKHiYzU1dZ4eXud1KmWAAAACXBIWXMAAAC1AAAAtQE50M6fAAAA8UlEQVQ4jYWT247DIAxEudh4zCWk//+z66hNtmqoOw8IJUeDPYaQxVUOEm6qnK69rIDSkFyAAg3fofLmAawKjQ7wiEDPDrAFtLg5AJVWqudw1EBeDQkF19d1DsDuAwW8AJhRnkPA2OoNiOZromOr1uqtCyIZzBPTrOyv8gcg/cVpTApMPbN+qyFWqJ2jx0m23IFSxC7CJfkEulYzUH1Bmj6BKWEAp4WeSf0D1te4/Gl55dIxpCuNBSCTS6VqoxprIKTQU40QyBfgKaQfgEYf6Nqp7d+BaFVSYaW+ArpF2VoeM9d8S/LQLrzvW3iXhF/P/w9Yygr4YsqKCAAAAABJRU5ErkJggg==" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="data:image/png;base64,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" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index.82ace642.js"></script>
+    <link rel="stylesheet" href="/assets/index.89859f41.css">
+  </head>
+  
+  
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a class="site-title" href="#">
+              <img src="/assets/chicken.71baf46e.svg" width="40px" alt="" />
+              <h1>You got Jokes</h1></a
+            >
+          </li>
+          <li>
+            <a href="#"><h1>About</h1></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="jokes"><h2 class="setup"></h2>
+      
+        <h2 class="punch-line hidden"></h2>
+      </div>
+      <!-- <div></div> -->
+      <div>
+        <button type="button" class="btn">Anwser! 😂</button>
+        <button type="button" class="btn2">Again! 😃</button>
+      </div>
+    </main>
+
+    
+  </body>
+</html>
