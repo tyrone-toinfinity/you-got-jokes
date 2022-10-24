@@ -77,9 +77,9 @@ button {
   margin: 2rem;
   height: 5rem;
   width: 10rem;
-  background-color: var(--color-accent1);
-  color: var(--color-font);
-  font-size: 1.2rem;
+  background-color: #f2acbf;
+  color: #000;
+  font-size: 1.4rem;
   border-radius: 0.2em;
 }
 
