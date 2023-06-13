@@ -13,15 +13,25 @@ const options = {
   },
 };
 
-const getDadJoke = async () => {
-  const res = await fetch("https://official-joke-api.appspot.com/jokes/random");
+const displayJoke = (joke) => {
+  setup.textContent = joke.setup;
+  punchline.textContent = joke.punchline;
+};
 
-  const data = await res.json();
-  setup.append(data.setup);
-  punchline.append(data.punchline);
+const getDadJoke = async () => {
+  try {
+    const res = await fetch(
+      "https://official-joke-api.appspot.com/jokes/random"
+    );
+    const data = await res.json();
+    displayJoke(data);
+  } catch (error) {
+    console.error("Error fetching dad joke:", error);
+  }
 };
 
 getDadJoke();
+
 btn.addEventListener("click", () => {
   punchline.classList.remove("hidden");
 });
